@@ -1,1 +1,11 @@
 ## test file test
+tasks:
+  images:
+    build:
+      services:
+        app:
+          image: binkkatal/app
+
+workflow:
+  - name: Basic
+    tasks: [ images ]
